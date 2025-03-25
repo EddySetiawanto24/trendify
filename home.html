@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendify Creations</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+	<script defer src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="home.html"> <img src="img/logo.png"  alt="Logo Trendify Creations"> </a>
+            <h1>Trendify Creations</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="hover" href="home.html">Home</a></li>
+                <li><a id="hover" href="product.html">Product</a></li>
+                <li><a id="hover" href="about.html">About Us</a></li>
+                <li><a id="hover" href="contact.html">Contact</a></li>
+                <a>  </a>
+            </ul>
+        </nav>
+        <!-- <div class="loading-spinner"></div> -->
+    </header>
+    <section class="slideshow-container">
+        <div class="slides">
+            <div class="slide fade"><img src="img/baju4.png" alt="Slide 1"></div>
+            <div class="slide fade"><img src="img/baju1.png" alt="Slide 2"></div>
+            <div class="slide fade"><img src="img/baju2.png" alt="Slide 3"></div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="dots-container"></div>
+    </section>
+  
+    <section class="about-us">
+        <h2>About <b>Us</b></h2>
+        <p>Trendify Creations adalah brand yang berfokus pada desain inovatif untuk produk seperti pakaian, stiker, dan poster. Kami menggabungkan teknologi AI dengan kreativitas untuk menghasilkan produk berkualitas tinggi dengan harga terjangkau. Dengan pendekatan ini, kami tidak hanya menciptakan desain yang menarik, tetapi juga memastikan bahwa setiap produk dapat dinikmati oleh berbagai kalangan tanpa harus mengorbankan kualitas.
+
+            Didirikan dengan visi untuk memberikan sentuhan unik dan eksklusif pada setiap produk, kami berkomitmen untuk selalu mengikuti tren terbaru dan menghadirkan desain yang relevan bagi para pecinta seni dan budaya pop. Fokus utama kami adalah memberikan pengalaman visual yang berbeda, terutama bagi penggemar anime dan kreativitas digital. Kami memahami bahwa setiap pelanggan memiliki selera yang unik, sehingga kami selalu berusaha menciptakan desain yang beragam dan sesuai dengan keinginan pasar..</p>
+        <a href="about.html" class="btn-more">Selengkapnya</a>
+    </section>
+    
+    <section class="product">
+        <h2>Product</h2>
+        <div class="product-container">
+            <div class="product-item">
+                <a href="product.html"><img src="img/poster22.jpg" alt="Kaos Anime" class="product-img"></a>
+                <a href="product.html" class="overlay-btn">Selengkapnya</a>
+            </div>
+            <div class="product-item">
+                <a href="product.html"><img src="img/design.jpg" alt="Sticker Pack" class="product-img"></a>
+                <a href="product.html" class="overlay-btn">Selengkapnya</a>
+            </div>
+            <div class="product-item">
+                <a href="product.html"><img src="img/baju2.png" alt="Poster Koleksi" class="product-img"></a>
+                <a href="product.html" class="overlay-btn">Selengkapnya</a>
+            </div>
+            <div class="product-item">
+                <a href="product.html"><img src="img/baju1.png" alt="Poster Koleksi" class="product-img"></a>
+                <a href="product.html" class="overlay-btn">Selengkapnya</a>
+            </div>
+            <div class="product-item">
+                <a href="product.html"><img src="img/stiker2.jpg" alt="stiker" class="product-img"></a>
+                <a href="product.html" class="overlay-btn">Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="explore">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+        <div class="r-title">
+            <p>What they <b>said</b></p>
+        </div>
+    
+        <div id="reviews" class="owl-carousel">
+    
+            <div class="r-card">
+                <div class="r-content">
+                    <img src="img/logo.png">
+                    <p>Desain sungguh menarik!, dengan tema berdasarkan Jejepangan👌🏻</p>
+                </div>
+                <div class="r-name">
+                    <h1>Thias Ayu Lestari</h1>
+                    <p>Local Guide</p>
+                </div>
+            </div>
+    
+            <div class="r-card">
+                <div class="r-content">
+                    <img src="img/logo.png">
+                    <p>Pertama kali coba order desain hasilnya sangat memuaskan 👏🏻👏🏻</p>
+                </div>
+                <div class="r-name">
+                    <h1>Muhammad Nouval</h1>
+                    <p>Local Guide</p>
+                </div>
+            </div>
+    
+            <div class="r-card">
+                <div class="r-content">
+                    <img src="img/logo.png">
+                    <p>Baju yang digunakan sangat nyaman, dan juga memiliki tampilan yang menarik!</p>
+                </div>
+                <div class="r-name">
+                    <h1>Nuri Tauchid</h1>
+                    <p>Local Guide</p>
+                </div>
+            </div>
+    
+            <div class="r-card">
+                <div class="r-content">
+                    <img src="img/logo.png">
+                    <p>Owner dan pelayanannya sangat ramah!
+                    </p>
+                </div>
+                <div class="r-name">
+                    <h1>Hendri Syahputra</h1>
+                    <p>Local Guide</p>
+                </div>
+            </div>
+    
+            <div class="r-card">
+                <div class="r-content">
+                    <img src="img/logo.png">
+                    <p>Cocok untuk mahasiswa yang dompetnya pas-pasan seperti saya!</p>
+                </div>
+                <div class="r-name">
+                    <h1>Fransiska Veronika</h1>
+                    <p>Local Guide</p>
+                </div>
+            </div>
+    
+        </div>
+                   
+    </section>	 
+
+    <section class="insta">
+
+        <div class="insta-title">
+            <p><b>Follow Us</b> on Insta</p>
+        </div>
+    
+        <iframe src="https://instagram.com/_trendifycreations/embed"
+        id="insta" scrolling="no" frameborder="1" allowfullscreen>
+        </iframe>
+    
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Trendify Creations | All Rights Reserved</p>
+    </footer>
+    
+    <script>
+        let slideIndex = 0;
+        let slides = document.querySelectorAll(".slide");
+        let dotsContainer = document.querySelector(".dots-container");
+        
+        slides.forEach((_, i) => {
+            let dot = document.createElement("span");
+            dot.classList.add("dot");
+            dot.setAttribute("onclick", `currentSlide(${i})`);
+            dotsContainer.appendChild(dot);
+        });
+    
+        function showSlides() {
+            slides.forEach((s, i) => s.style.display = (i === slideIndex) ? "flex" : "none");
+            document.querySelectorAll(".dot").forEach((d, i) => d.classList.toggle("active", i === slideIndex));
+        }
+        
+        function changeSlide(n) {
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            showSlides();
+        }
+        
+        function currentSlide(n) {
+            slideIndex = n;
+            showSlides();
+        }
+        
+        function autoSlide() {
+            changeSlide(1);
+            setTimeout(autoSlide, 4000);
+        }
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            showSlides();
+            setTimeout(autoSlide, 4000);
+        });
+    </script>
+    
+    
+</body>
+</html>

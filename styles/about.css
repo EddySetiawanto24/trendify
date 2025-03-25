@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background: #ffffff;
+    color: #000000;
+    padding: 5px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+    text-decoration: none;
+    
+}
+
+nav ul li a {
+    color: #000;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 98, 0);
+    /* box-shadow: inset 200px 0 0 0 white; */
+    display: inline-block;
+    filter: blur(0.3px);
+}
+
+#hover:after {
+    background: rgb(0, 0, 0);
+    bottom: -7px;
+    content: "  ";
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition-duration: 0.4s;
+    width: 0;
+}
+
+#hover:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background: white;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    z-index: 10;
+}
+
+header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, #f87919, #f3ddcb);
+    transition: width 1s ease-in-out;
+    z-index: -1; /* Ini membuat efek ada di belakang */
+}
+
+header:hover::after {
+    width: 100%;
+}
+
+
+header:hover .loading-spinner {
+    display: block;
+}
+
+
+.profile-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-section h2 {
+    font-size: 54px;
+    color: #ff6f00;
+    text-align: center;
+    line-height: 1;
+    margin: 10px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgb(201, 198, 198);
+
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+
+/* .profile-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+} */
+.profile-item {
+    width: 250px;
+    height: 320px;
+    aspect-ratio: 1 / 1.2; /* Menjaga rasio tinggi agar lebih fleksibel */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px;
+
+}
+
+.profile-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Memastikan gambar tetap proporsional */
+    object-fit: cover; /* Agar gambar tetap memenuhi container */
+    border-radius: 8px;
+}
+
+.profile-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.profile-item p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+.visi-misi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #fff4e6, #ffe0b2);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.visi-misi h2 {
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 54px;
+    color: #ff6f00;
+    font-weight: bold;
+}
+
+.visi, .misi {
+    flex: 1;
+    height: 400px;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    border-left: 6px solid #ff6f00;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visi:hover, .misi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.visi h3, .misi h3 {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #ff6f00;
+    margin-bottom: 15px;
+}
+
+.visi h3::before {
+    content: "🎯";
+    margin-right: 10px;
+}
+
+.misi h3::before {
+    content: "🚀";
+    margin-right: 10px;
+}
+
+.visi p, .misi p {
+    text-align: justify;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .visi-misi {
+        flex-direction: column;
+        text-align: center;
+    }
+    .visi, .misi {
+        text-align: left;
+        max-width: 90%;
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #fff;
+    color: #000000;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px 0 rgba(251, 255, 0, 0.2), 0 6px 20px 0 rgba(255, 49, 49, 0.19);
+}

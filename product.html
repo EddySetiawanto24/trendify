@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendify Creations</title>
+    <link rel="stylesheet" href="styles/product.css">
+
+	<script defer src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="home.html"> <img src="img/logo.png"  alt="Logo Trendify Creations"> </a>
+            <h1>Trendify Creations</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="hover" href="home.html">Home</a></li>
+                <li><a id="hover" href="product.html">Product</a></li>
+                <li><a id="hover" href="about.html">About Us</a></li>
+                <li><a id="hover" href="contact.html">Contact</a></li>
+                <a>  </a>
+            </ul>
+        </nav>
+    </header>
+ <section class="products">
+        <h2>Produk Trendify Creation</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="img/baju2.png" alt="Product 1" class="product-img">
+                <h3>T-Shirt</h3>
+                <p>Desain unik dengan kaos yang bagus dengan harga terjangkau.</p>
+                <span class="price">Rp159.000</span>
+                <a href="https://wa.me/6285183241886?text=Hello%20min,%20saya%20mau%20order">
+                    <button class="buy-btn">Beli Sekarang</button>
+                </a>
+            </div>
+            <div class="product-item">
+                <img src="img/baju1.png" alt="Product 2" class="product-img">
+                <h3>T-Shirt</h3>
+                <p>Desain eksklusif dengan bahan berkualitas tinggi.</p>
+                <span class="price">Rp159.000</span>
+                <a href="https://wa.me/6285183241886?text=Hello%20min,%20saya%20mau%20order">
+                    <button class="buy-btn">Beli Sekarang</button>
+                </a>
+            </div>
+            <div class="product-item">
+                <img src="img/poster23.jpg" id="poster" alt="Product 3" class="product-img">
+                <h3>Poster</h3>
+                <p>Kaos dengan bahan premium dan desain trendi yang eksklusif.</p>
+                <span class="price">Rp19.000</span>
+                <a href="https://wa.me/6285183241886?text=Hello%20min,%20saya%20mau%20order">
+                    <button class="buy-btn">Beli Sekarang</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgPopup">
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $('.product-img').click(function(){
+                var src = $(this).attr('src');
+                $('#imgPopup').attr('src', src);
+                $('#myModal').fadeIn();
+            });
+            $('.close, #myModal').click(function(){
+                $('#myModal').fadeOut();
+            });
+        });
+    </script>
+    
+</body>
+</html>
+        
+    
+        <section class="reviews" id="explore">
+    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+            <link rel="stylesheet" href="styles.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        
+            <div class="r-title">
+                <p>What they <b>FeedBack</b></p>
+            </div>
+        
+            <div id="reviews" class="owl-carousel">
+        
+                <div class="r-card">
+                    <div class="r-content">
+                        <img src="img/baju.png">
+                        <p>Desain sungguh menarik!, dengan tema berdasarkan Jejepangan👌🏻</p>
+                    </div>
+                    <div class="r-name">
+                        <h1>Thias Ayu Lestari</h1>
+                        <p>Local Guide</p>
+                    </div>
+                </div>
+        
+                <div class="r-card">
+                    <div class="r-content">
+                        <img src="img/logo.png">
+                        <p>Pertama kali coba order desain hasilnya sangat memuaskan 👏🏻👏🏻</p>
+                    </div>
+                    <div class="r-name">
+                        <h1>Muhammad Nouval</h1>
+                        <p>Local Guide</p>
+                    </div>
+                </div>
+        
+                <div class="r-card">
+                    <div class="r-content">
+                        <img src="img/shiba1.png">
+                        <p>Baju yang digunakan sangat nyaman, dan juga memiliki tampilan yang menarik!</p>
+                    </div>
+                    <div class="r-name">
+                        <h1>Nuri Tauchid</h1>
+                        <p>Local Guide</p>
+                    </div>
+                </div>
+        
+                <div class="r-card">
+                    <div class="r-content">
+                        <img src="img/tren.png">
+                        <p>Owner dan pelayanannya sangat ramah!
+                        </p>
+                    </div>
+                    <div class="r-name">
+                        <h1>Hendri Syahputra</h1>
+                        <p>Local Guide</p>
+                    </div>
+                </div>
+        
+                <div class="r-card">
+                    <div class="r-content">
+                        <img src="img/baju.png">
+                        <p>Cocok untuk mahasiswa yang dompetnya pas-pasan seperti saya!</p>
+                    </div>
+                    <div class="r-name">
+                        <h1>Fransiska Veronika</h1>
+                        <p>Local Guide</p>
+                    </div>
+                </div>
+        
+            </div>
+                       
+        </section>	 
+
+        <footer>
+            <p>&copy; 2025 Trendify Creations | All Rights Reserved</p>
+        </footer>
+
+</body>
+</html>
+    
